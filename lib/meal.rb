@@ -15,5 +15,11 @@ class Meal
   def self.all
     @@all
   end
+  
+  def waiters
+  meals.map do |meal|
+    meal.waiter
+  end
+end
 
 end
